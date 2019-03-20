@@ -12,7 +12,7 @@ public class EmailListener {
 	
 	private static Logger log  = LoggerFactory.getLogger(EmailListener.class);
 	
-//	@JmsListener(destination = "mailbox", containerFactory = "myFactory")
+	@JmsListener(destination = "mailbox", containerFactory = "myFactory")
 	public void receiveEmail(Email email) {
 		log.info("Message received : " + email);		
 	}
